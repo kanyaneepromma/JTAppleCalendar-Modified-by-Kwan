@@ -30,7 +30,6 @@ import UIKit
 /// the JTAppleCalendarMonthViewDataSource object. data source provides the
 /// the calendar-view object with the information it needs to construct and
 /// then modify it self
-@available(*, unavailable, renamed: "JTACMonthViewDataSource")
 public protocol JTAppleCalendarViewDataSource: AnyObject {}
 public protocol JTACMonthViewDataSource: AnyObject {
     /// Asks the data source to return the start and end boundary dates
@@ -46,7 +45,6 @@ public protocol JTACMonthViewDataSource: AnyObject {
 /// The delegate of a JTAppleCalendarMonthView object must adopt the
 /// JTAppleCalendarMonthViewDelegate protocol Optional methods of the protocol
 /// allow the delegate to manage selections, and configure the cells
-@available(*, unavailable, renamed: "JTACMonthViewDelegate")
 public protocol JTAppleCalendarViewDelegate: AnyObject {}
 public protocol JTACMonthViewDelegate: AnyObject {
     /// Asks the delegate if selecting the date-cell with a specified date is

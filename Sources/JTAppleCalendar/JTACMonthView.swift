@@ -34,7 +34,6 @@ let errorDelta: CGFloat = 0.0000001
 
 /// An instance of JTAppleCalendarMonthView (or simply, a calendar view) is a
 /// means for displaying and interacting with a gridstyle layout of date-cells
-@available(*, unavailable, renamed: "JTACMonthView")
 open class JTAppleCalendarView: UICollectionView {}
 open class JTACMonthView: UICollectionView {
     
@@ -97,7 +96,6 @@ open class JTACMonthView: UICollectionView {
     }
     
     /// Initializes and returns a newly allocated collection view object with the specified frame and layout.
-    @available(*, unavailable, message: "Please use JTAppleCalendarMonthView() instead. It manages its own layout.")
     public override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
         setupNewLayout(from: collectionViewLayout as! JTACMonthLayoutProtocol)

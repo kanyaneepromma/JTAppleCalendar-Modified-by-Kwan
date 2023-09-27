@@ -101,7 +101,6 @@ extension JTACMonthView {
     }
     
     // Subclasses cannot use this function
-    @available(*, unavailable)
     open override func reloadData() {
         super.reloadData()
     }
